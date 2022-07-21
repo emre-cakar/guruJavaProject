@@ -96,7 +96,7 @@ public class UI extends JFrame {
         pnlNavbar.setPreferredSize(new Dimension(width,45));
 
         iconAdd = new ImageIcon("Icons/add24.png");
-        btnAdd=new JButton("Add",iconAdd);
+        btnAdd=new JButton("Stock",iconAdd);
         btnAdd.setFont(new Font("Arial", Font.BOLD, 18));
         btnAdd.setBounds(0,0,75,30);
         btnAdd.setPreferredSize(new Dimension(150,40));
@@ -106,7 +106,7 @@ public class UI extends JFrame {
         btnAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                changeJFrameVisible(pnlContentTable,pnlContentArea);
+                changeJPanelVisible(pnlContentTable,pnlContentArea);
                 clearAllFields();
             }
         });
@@ -133,47 +133,8 @@ public class UI extends JFrame {
         });
         pnlNavbar.add(btnCopy);
 
-        iconUpdate = new ImageIcon("Icons/update24.png");
-        btnUpdate=new JButton("Update",iconUpdate);
-        btnUpdate.setFont(new Font("Arial", Font.BOLD, 18));
-        btnUpdate.setBounds(0,0,75,30);
-        btnUpdate.setPreferredSize(new Dimension(150,40));
-        btnUpdate.setBackground(Config.colorWhite);
-        btnUpdate.setFocusPainted(false);
-        btnUpdate.setHorizontalAlignment(SwingConstants.LEFT);
-        btnUpdate.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(dataTable.getSelectedRow()>-1){
-                    updateSelectedStock(dataTable.getSelectedRow());
-                }else{
-                    Help.showMsg("Please, select row...");
-                }
-            }
-        });
-        pnlNavbar.add(btnUpdate);
 
-        iconDelete = new ImageIcon("Icons/delete24.png");
-        btnDelete=new JButton("Delete",iconDelete);
-        btnDelete.setFont(new Font("Arial", Font.BOLD, 18));
-        btnDelete.setBounds(0,0,75,30);
-        btnDelete.setPreferredSize(new Dimension(150,40));
-        btnDelete.setBackground(Config.colorWhite);
-        btnDelete.setFocusPainted(false);
-        btnDelete.setHorizontalAlignment(SwingConstants.LEFT);
-        btnDelete.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(dataTable.getSelectedRow()>-1){
-                    StockManager.delete(dataTable.getValueAt(dataTable.getSelectedRow(),0).toString());
-                    updateTable();
-                    Help.showMsg("Record is deleted.");
-                }else{
-                    Help.showMsg("Please, select row...");
-                }
-            }
-        });
-        pnlNavbar.add(btnDelete);
+
 
         return pnlNavbar;
     }
@@ -244,18 +205,18 @@ public class UI extends JFrame {
         dataTable.setPreferredSize(new Dimension(width*90/100, 425));
         dataTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         pm=new JPopupMenu();
-        JMenuItem add=new JMenuItem("Add");
+        JMenuItem add=new JMenuItem("Stock");
         JMenuItem copy=new JMenuItem("Copy");
-        JMenuItem update=new JMenuItem("Update");
+        JMenuItem info=new JMenuItem("Info");
         JMenuItem delete=new JMenuItem("Delete");
         pm.add(add);
         pm.add(copy);
-        pm.add(update);
+        pm.add(info);
         pm.add(delete);
         add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                changeJFrameVisible(pnlContentTable,pnlContentArea);
+                changeJPanelVisible(pnlContentTable,pnlContentArea);
                 clearAllFields();
             }
         });
@@ -269,12 +230,47 @@ public class UI extends JFrame {
                 }
             }
         });
+        info.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(dataTable.getSelectedRow()>-1){
+                    clearAllFields();
+                    tfCode.setText(dataTable.getValueAt(dataTable.getSelectedRow(),0).toString());
+                    Stock stock=StockManager.isThereByCode(tfCode.getText().toString());
+                    if(stock!=null) {
+                        tfCode.setFocusable(false);
+                        tfCode.setEnabled(false);
+                        tfName.setText(stock.getName());
+                        cmbxType.setSelectedItem(stock.getType());
+                        cmbxUnit.setSelectedItem(stock.getUnit());
+                        tfBarcode.setText(stock.getBarcode());
+                        cmbxVar.setSelectedItem(stock.getVarType());
+                        taDescription.setText(stock.getDescription());
+                        Date date = null;
+                        try {
+                            date = new SimpleDateFormat("yyyy-MM-dd").parse(stock.getCreatedDate());
+                        } catch (ParseException ex) {
+                            ex.printStackTrace();
+                        }
+                        dateChooser.setDate(date);
+                    }
+                    changeJPanelVisible(pnlContentTable,pnlContentArea);
+                    tfName.requestFocusInWindow();
+                }else{
+                    Help.showMsg("Please, select row...");
+                }
+            }
+        });
+
+
         delete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(dataTable.getSelectedRow()>-1){
+                    tfSearch.setText(null);
                     StockManager.delete(dataTable.getValueAt(dataTable.getSelectedRow(),0).toString());
                     updateTable();
+                    tfSearch.setText("Search");
                     Help.showMsg("Record is deleted.");
                 }else{
                     Help.showMsg("Please, select row...");
@@ -333,9 +329,21 @@ public class UI extends JFrame {
                 if (tfCode.getText().trim().length()>0){
                     Stock stock=StockManager.isThereByCode(tfCode.getText().toString());
                     if(stock!=null){
-                        Help.showMsg(tfCode.getText().toString() + " is entered before. Not permitted. Please, enter differend stock code");
-                        tfCode.setText(null);
-                        tfCode.requestFocusInWindow();
+                        tfCode.setFocusable(false);
+                        tfCode.setEnabled(false);
+                        tfName.setText(stock.getName());
+                        cmbxType.setSelectedItem(stock.getType());
+                        cmbxUnit.setSelectedItem(stock.getUnit());
+                        tfBarcode.setText(stock.getBarcode());
+                        cmbxVar.setSelectedItem(stock.getVarType());
+                        taDescription.setText(stock.getDescription());
+                        Date date = null;
+                        try {
+                            date = new SimpleDateFormat("yyyy-MM-dd").parse(stock.getCreatedDate());
+                        } catch (ParseException ex) {
+                            ex.printStackTrace();
+                        }
+                        dateChooser.setDate(date);
                     }
                 }
             }
@@ -473,7 +481,7 @@ public class UI extends JFrame {
                 tfCode.setFocusable(true);
                 tfCode.setEnabled(true);
                 dataTable.getSelectionModel().clearSelection();
-                changeJFrameVisible(pnlContentTable,pnlContentArea);
+                changeJPanelVisible(pnlContentTable,pnlContentArea);
                 tfSearch.setText(null);
                 updateTable();
                 tfSearch.setText("Search...");
@@ -481,6 +489,32 @@ public class UI extends JFrame {
             }
         });
         pnlContentArea.add(btnCancel);
+
+        iconDelete = new ImageIcon("Icons/delete24.png");
+        btnDelete=new JButton("Delete",iconDelete);
+        btnDelete.setFont(new Font("Arial", Font.BOLD, 18));
+        btnDelete.setBounds(20,430,75,30);
+        btnDelete.setPreferredSize(new Dimension(150,40));
+        btnDelete.setBackground(Config.colorWhite);
+        btnDelete.setFocusPainted(false);
+        btnDelete.setHorizontalAlignment(SwingConstants.LEFT);
+        btnDelete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!tfCode.isEnabled()){
+                    StockManager.delete(tfCode.getText());
+                    tfSearch.setText(null);
+                    updateTable();
+                    tfSearch.setText("Search...");
+                    Help.showMsg("Record is deleted.");
+                    changeJPanelVisible(pnlContentTable,pnlContentArea);
+                    clearAllFields();
+                }else{
+                    Help.showMsg("Not found record...");
+                }
+            }
+        });
+        pnlContentArea.add(btnDelete);
 
         iconSave = new ImageIcon("Icons/save24.png");
         btnSave=new JButton("Save",iconSave);
@@ -546,7 +580,7 @@ public class UI extends JFrame {
                 tfSearch.setText(null);
                 updateTable();
                 tfSearch.setText("Search...");
-                changeJFrameVisible(pnlContentTable,pnlContentArea);
+                changeJPanelVisible(pnlContentTable,pnlContentArea);
                 tfCode.setFocusable(true);
                 tfCode.setEnabled(true);
             }
@@ -556,7 +590,9 @@ public class UI extends JFrame {
         return pnlContentArea;
     }
 
+    private void fillCompanentArea(Stock s){
 
+    }
     private void clearAllFields() {
         Component[] components = pnlContentArea.getComponents();
         for (Component component: components) {
@@ -594,7 +630,7 @@ public class UI extends JFrame {
             });
         }
     }
-    private void changeJFrameVisible(JPanel ... panels){
+    private void changeJPanelVisible(JPanel ... panels){
         btnSetVisible();
         for(JPanel p:panels){
             p.setVisible( p.isVisible()?false:true);
@@ -615,7 +651,7 @@ public class UI extends JFrame {
             e.printStackTrace();
         }
         dateChooser.setDate(date);
-        changeJFrameVisible(pnlContentTable,pnlContentArea);
+        changeJPanelVisible(pnlContentTable,pnlContentArea);
         tfCode.requestFocusInWindow();
     }
     private void updateSelectedStock(int selectedRow){
@@ -636,7 +672,7 @@ public class UI extends JFrame {
             e.printStackTrace();
         }
         dateChooser.setDate(date);
-        changeJFrameVisible(pnlContentTable,pnlContentArea);
+        changeJPanelVisible(pnlContentTable,pnlContentArea);
     }
 
 }
