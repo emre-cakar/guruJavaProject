@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/1-MySQL/mysql-connector-java-8.0.29.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/2-SwingComponent/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-anim-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-awt-util-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-bridge-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-codec-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-constants-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-css-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-dom-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-ext-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-gvt-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-i18n-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-parser-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-script-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-shared-resources-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-svg-dom-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-svggen-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-svgrasterizer-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-transcoder-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-util-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/batik-xml-1.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/bcpkix-jdk15on-1.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/bcprov-jdk15on-1.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/bcutil-jdk15on-1.70.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/curvesapi-1.07.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/fontbox-2.0.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/graphics2d-0.35.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/log4j-api-2.17.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/pdfbox-2.0.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-examples-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-excelant-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-javadoc-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-ooxml-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-ooxml-full-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-ooxml-lite-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/poi-scratchpad-5.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/SparseBitSet-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/xml-apis-ext-1.3.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/xmlbeans-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/xmlgraphics-commons-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/3-apachePOI/xmlsec-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/5-mail/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/5-mail/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/bcmail-jdk14-1.38.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/bcmail-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/bcprov-jdk14-1.38.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/bcprov-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/bctsp-jdk14-1.38.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/castor-core-1.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/castor-xml-1.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/core-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/ecj-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/icu4j-57.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/itext-2.1.7.js5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jackson-annotations-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jackson-core-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jackson-databind-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jakarta-regexp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jasperreports-6.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/lucene-analyzers-common-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/lucene-core-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/lucene-queries-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/lucene-queryparser-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/lucene-sandbox-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/olap4j-0.9.7.309-JS-3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/spring-aop-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/spring-asm-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/spring-beans-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/spring-context-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/spring-core-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/spring-expression-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/stax-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cakarem/Desktop/Staj/WorkSpace/StockMVC/Lib/4- ireport/stax-api-1.0-2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
